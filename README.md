@@ -45,6 +45,11 @@ This lab simulates a real-world scenario at MapleTech Solutions, a fast-growing 
 
 > All policies were successfully enforced. Screenshots are available in the [`screenshots/`](./screenshots/) directory.
 
+![Deploy VM in East US ](screenshots/east-us-vm-denied.png)
+![Deploy Storage Account without ProjectName tag ](screenshots/no-tag-storage-denied.png)
+![Create a Public IP](screenshots/public-ip-denied.png)
+![Deploy VM in Canada Central with ProjectName tag ](screenshots/canada-vm-allowed.png)
+
 ## 🎥 Video Demo  
 [🔗 Watch the Demo Video](https://your-demo-video-link.com)  
 *(Max 10 minutes, includes policy creation, test execution, and results)*
