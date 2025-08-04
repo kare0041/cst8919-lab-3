@@ -1,0 +1,42 @@
+{
+    "properties": {
+      "displayName": "Only-CanadaCentral",
+      "policyType": "Custom",
+      "mode": "All",
+      "description": "Denies any resource that is not being deployed in the Canada Central region",
+      "metadata": {
+        "category": "Security",
+        "createdBy": "62f95b61-a2c0-462e-823f-ed9e060061d4",
+        "createdOn": "2025-08-04T01:30:03.1678808Z",
+        "updatedBy": null,
+        "updatedOn": null
+      },
+      "version": "1.0.0",
+      "parameters": {},
+      "policyRule": {
+        "if": {
+          "not": {
+            "field": "location",
+            "equals": "canadacentral"
+          }
+        },
+        "then": {
+          "effect": "deny"
+        }
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "id": "/subscriptions/a45f626d-5ae3-4176-ac41-2a5a558301a5/providers/Microsoft.Authorization/policyDefinitions/db92002d-8482-46cf-8ee5-316d2ec8478f",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "db92002d-8482-46cf-8ee5-316d2ec8478f",
+    "systemData": {
+      "createdBy": "kare0041@algonquinlive.com",
+      "createdByType": "User",
+      "createdAt": "2025-08-04T01:30:02.9663734Z",
+      "lastModifiedBy": "kare0041@algonquinlive.com",
+      "lastModifiedByType": "User",
+      "lastModifiedAt": "2025-08-04T01:30:02.9663734Z"
+    }
+  }

@@ -1,0 +1,49 @@
+{
+    "properties": {
+      "displayName": "Require-ProjectName-Tag",
+      "policyType": "Custom",
+      "mode": "All",
+      "description": "Requires a tag called ProjectName",
+      "metadata": {
+        "category": "Security",
+        "createdBy": "62f95b61-a2c0-462e-823f-ed9e060061d4",
+        "createdOn": "2025-08-04T01:34:18.0293063Z",
+        "updatedBy": null,
+        "updatedOn": null
+      },
+      "version": "1.0.0",
+      "parameters": {
+        "tagName": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Tag Name",
+            "description": "Name of the tag to require"
+          },
+          "defaultValue": "ProjectName"
+        }
+      },
+      "policyRule": {
+        "if": {
+          "field": "[concat('tags[', parameters('tagName'), ']')]",
+          "exists": "false"
+        },
+        "then": {
+          "effect": "deny"
+        }
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "id": "/subscriptions/a45f626d-5ae3-4176-ac41-2a5a558301a5/providers/Microsoft.Authorization/policyDefinitions/28c624b9-f652-433b-a841-15e7bfea21e1",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "28c624b9-f652-433b-a841-15e7bfea21e1",
+    "systemData": {
+      "createdBy": "kare0041@algonquinlive.com",
+      "createdByType": "User",
+      "createdAt": "2025-08-04T01:34:18.0063954Z",
+      "lastModifiedBy": "kare0041@algonquinlive.com",
+      "lastModifiedByType": "User",
+      "lastModifiedAt": "2025-08-04T01:34:18.0063954Z"
+    }
+  }
