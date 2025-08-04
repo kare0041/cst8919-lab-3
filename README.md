@@ -51,7 +51,7 @@ This lab simulates a real-world scenario at MapleTech Solutions, a fast-growing 
 ![Deploy VM in Canada Central with ProjectName tag ](screenshots/canada-vm-allowed.png)
 
 ## 🎥 Video Demo  
-[🔗 Watch the Demo Video](https://your-demo-video-link.com)  
+[🔗 Watch the Demo Video](https://youtu.be/KibWj8b0wBM)  
 *(Max 10 minutes, includes policy creation, test execution, and results)*
 
 ## 📁 Lab Folder Structure  
